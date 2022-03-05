@@ -4,21 +4,21 @@ const boring = document.querySelector('#boring');
 const txtArea = document.querySelector('textarea');
 const moo = document.querySelector('#moo');
 
-biggerBtn.onclick = (e) => {
-    e.target.style.fontSize = "24px";
+biggerBtn.onclick = () => {
+    txtArea.style.fontSize = "24px";
 };
 
-fancy.onchange = (e) => {
+fancy.onchange = () => {
     txtArea.style.fontWeight = 'bold';
     txtArea.style.color = 'blue';
     txtArea.style.textDecoration = 'underline';
 }
 
-boring.onchange = (e) => {
+boring.onchange = () => {
     txtArea.removeAttribute('style');
 }
 
-moo.onclick = (e) => {
+moo.onclick = () => {
     let text = txtArea.value;
     text = text.toUpperCase();
     let sentences = text.split('.');
