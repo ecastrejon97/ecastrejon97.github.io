@@ -20,6 +20,7 @@ boring.onchange = (e) => {
 
 moo.onclick = (e) => {
     let text = txtArea.value;
+    text = text.toUpperCase();
     let sentences = text.split('.');
     txtArea.value = sentences.join("-Moo.");
 }
