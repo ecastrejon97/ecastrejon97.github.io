@@ -22,5 +22,5 @@ moo.onclick = () => {
     let text = txtArea.value;
     text = text.toUpperCase();
     let sentences = text.split('.');
-    txtArea.value = sentences.join("-Moo.");
+    txtArea.value = sentences.join("-Moo");
 }
