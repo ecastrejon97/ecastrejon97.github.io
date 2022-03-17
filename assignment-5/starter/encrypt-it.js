@@ -45,13 +45,13 @@
   }
 
   function shift(c, k) {
-   if(isUpper(c)) {
-     return String.fromCharCode(((c.charCodeAt(0) - 'A'.charCodeAt(0) + k) % 26) + 'A'.charCodeAt(0));
-   } else if(isLower(c)) {
-     return String.fromCharCode(((c.charCodeAt(0) - 'a'.charCodeAt(0) + k) % 26) + 'a'.charCodeAt(0));
-   } else {
-     return c;
-   }
+    if(isUpper(c)) {
+      return String.fromCharCode(((c.charCodeAt(0) - 'A'.charCodeAt(0) + k) % 26) + 'A'.charCodeAt(0));
+    } else if(isLower(c)) {
+      return String.fromCharCode(((c.charCodeAt(0) - 'a'.charCodeAt(0) + k) % 26) + 'a'.charCodeAt(0));
+    } else {
+      return c;
+    }
   }
 
   function isUpper(c) {
